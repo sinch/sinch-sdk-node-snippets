@@ -1,0 +1,20 @@
+{
+  "name": "sinch-sdk-node-snippets",
+  "version": "1.0.0",
+  "description": "Code snippets related to the Sinch Node.js SDK usage",
+  "author": "Sinch",
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "npx eslint ."
+  },
+  "devDependencies": {
+    "globals": "^15.9.0",
+    "@eslint/js": "^9.10.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-deprecation": "^3.0.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-node": "^11.1.0"
+  }
+}
