@@ -55,7 +55,6 @@ export default [...compat.extends('eslint:recommended', 'google', 'prettier'), {
       ignorePattern: '^import.+|test',
     }],
 
-    'new-cap': 'off',
-    'no-unused-vars': 'off'
+    'new-cap': 'off'
   },
 }];
