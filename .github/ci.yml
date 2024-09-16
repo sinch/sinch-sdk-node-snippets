@@ -18,5 +18,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Run TypeScript compiler
+        run: tsc
+
       - name: Lint and format check
         run: npm run lint
