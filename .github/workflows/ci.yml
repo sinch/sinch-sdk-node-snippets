@@ -3,7 +3,7 @@ name: Node.js Snippets Continuous Integration
 on: [push]
 
 jobs:
-  lint:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,6 +17,13 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Install snippets dependencies
+        working-directory: ./snippets
+        run: npm install
+
+      - name: Run TypeScript compiler
+        run: tsc
 
       - name: Lint and format check
         run: npm run lint

@@ -32,8 +32,6 @@ export default [...compat.extends('eslint:recommended', 'google', 'prettier'), {
   },
 
   rules: {
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-var-requires': 'off',
     semi: 'warn',
     'comma-dangle': 'warn',
     quotes: ['warn', 'single'],
@@ -57,6 +55,5 @@ export default [...compat.extends('eslint:recommended', 'google', 'prettier'), {
       ignorePattern: '^import.+|test',
     }],
 
-    'new-cap': 'off',
   },
 }];
