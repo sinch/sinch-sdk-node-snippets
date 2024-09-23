@@ -3,6 +3,7 @@
     "allowJs": true,
     "checkJs": true,
     "strict": true,
+    "lib": ["ES2022", "dom"],
     "moduleResolution": "node",
     "pretty": true,
     "baseUrl": ".",
