@@ -11,15 +11,11 @@ export const execute = async (numbersService) => {
     phoneNumber,
   };
 
-  let response;
   try {
-    response = await numbersService.availableNumber.checkAvailability(requestData);
+    const response = await numbersService.availableNumber.checkAvailability(requestData);
+    console.log(`The phone number is available:\n${JSON.stringify(response, null, 2)}`);
   } catch (error) {
     console.error(`ERROR: the phone number ${requestData.phoneNumber} is not available`);
-  }
-
-  if (response) {
-    console.log(`The phone number is available:\n${JSON.stringify(response, null, 2)}`);
   }
 
 };
