@@ -11,8 +11,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "**/*.js",
-    "eslint.config.mjs"
+    "**/*.js"
   ],
   "exclude": [
     "node_modules"

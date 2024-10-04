@@ -15,7 +15,7 @@ export const execute = async (smsService) => {
       to: [
         recipient,
       ],
-      body: 'Hi $\{name}! Here is your discount code ${code}',
+      body: 'Hi ${name}! Here is your discount code ${code}',
       parameters: {
         name: {
           [recipient]: 'John',
