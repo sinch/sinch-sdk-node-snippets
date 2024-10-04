@@ -11,7 +11,7 @@ export const execute = async (numbersService) => {
     phoneNumber,
   };
 
-  const response = await numbersService.activeNumber.release(requestData);
+  const response = await numbersService.release(requestData);
 
   console.log(`Released number:\n${JSON.stringify(response, null, 2)}`);
 };

@@ -11,7 +11,7 @@ export const execute = async (numbersService) => {
     phoneNumber,
   };
 
-  const response = await numbersService.activeNumber.get(requestData);
+  const response = await numbersService.get(requestData);
 
   console.log(`Rented number details:\n${JSON.stringify(response, null, 2)}`);
 };

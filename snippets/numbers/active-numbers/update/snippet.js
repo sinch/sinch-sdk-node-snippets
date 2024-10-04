@@ -23,7 +23,7 @@ export const execute = async (numbersService) => {
     },
   };
 
-  const response = await numbersService.activeNumber.update(requestData);
+  const response = await numbersService.update(requestData);
 
   console.log(`Updated number:\n${JSON.stringify(response, null, 2)}`);
 };

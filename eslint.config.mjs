@@ -1,5 +1,6 @@
 import deprecation from 'eslint-plugin-deprecation';
 import prettier from 'eslint-plugin-prettier';
+import typescriptParser from '@typescript-eslint/parser';
 import node from 'eslint-plugin-node';
 import globals from 'globals';
 import path from 'node:path';
@@ -26,7 +27,11 @@ export default [...compat.extends('eslint:recommended', 'google', 'prettier'), {
     globals: {
       ...globals.node,
     },
-
+    parser: typescriptParser,
+    parserOptions: {
+      project: true,
+      sourceType: 'module',
+    },
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
@@ -54,6 +59,8 @@ export default [...compat.extends('eslint:recommended', 'google', 'prettier'), {
       ignoreRegExpLiterals: true,
       ignorePattern: '^import.+|test',
     }],
+
+    'deprecation/deprecation': 'warn',
 
   },
 }];

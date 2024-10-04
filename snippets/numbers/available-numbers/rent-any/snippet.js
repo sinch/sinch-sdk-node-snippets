@@ -33,7 +33,7 @@ export const execute = async (numbersService) => {
     },
   };
 
-  const response = await numbersService.availableNumber.rentAny(requestData);
+  const response = await numbersService.rentAny(requestData);
 
   console.log(`Rented number:\n${JSON.stringify(response, null, 2)}`);
 
