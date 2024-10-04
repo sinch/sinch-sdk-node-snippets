@@ -19,7 +19,7 @@ export const execute = async (numbersService) => {
     },
   };
 
-  const response = await numbersService.availableNumber.rent(requestData);
+  const response = await numbersService.rent(requestData);
 
   console.log(`Rented number:\n${JSON.stringify(response, null, 2)}`);
 };

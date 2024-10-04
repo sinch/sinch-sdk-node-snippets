@@ -13,7 +13,7 @@ export const execute = async (numbersService) => {
   /** @type {Numbers.ActiveNumber[]} */
   const activeNumbersList = [];
   // Fetch a page of Numbers
-  let response = await numbersService.activeNumber.list(requestData);
+  let response = await numbersService.list(requestData);
   // Fetch the data page by page manually
   while (response.hasNextPage) {
     activeNumbersList.push(...response.data);

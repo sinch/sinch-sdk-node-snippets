@@ -7,13 +7,13 @@ export const execute = async (verificationService) => {
   const verificationID = 'the_verification_ID';
   const verificationCode = 'the_verification_code_received_by_phone_call';
 
-  /** @type {Verification.ReportCalloutVerificationByIdRequestData} */
-  const requestData = Verification.reportVerificationByIdHelper.buildCalloutRequest(
+  /** @type {Verification.ReportPhoneCallVerificationByIdRequestData} */
+  const requestData = Verification.reportVerificationByIdHelper.buildPhoneCallRequest(
     verificationID,
     verificationCode,
   );
 
-  const response = await verificationService.verifications.reportCalloutById(requestData);
+  const response = await verificationService.verifications.reportPhoneCallById(requestData);
 
   console.log(`Response:\n${JSON.stringify(response, null, 2)}`);
 };

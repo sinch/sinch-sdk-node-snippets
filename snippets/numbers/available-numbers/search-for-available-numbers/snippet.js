@@ -11,7 +11,7 @@ export const execute = async (numbersService) => {
     capabilities: ['SMS', 'VOICE'],
   };
 
-  const response = await numbersService.availableNumber.list(requestData);
+  const response = await numbersService.searchForAvailableNumbers(requestData);
 
   console.log(`Available numbers to rent:\n${JSON.stringify(response, null, 2)}`);
 };

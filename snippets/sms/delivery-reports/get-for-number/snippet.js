@@ -10,7 +10,7 @@ export const execute = async (smsService) => {
   /** @type {Sms.GetDeliveryReportByPhoneNumberRequestData} */
   const requestData= {
     batch_id: batchId,
-    recipient_msisdn: recipient,
+    phone_number: recipient,
   };
 
   const response = await smsService.deliveryReports.getForNumber(requestData);
